@@ -1,0 +1,250 @@
+R
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+    background-color: #ffffff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+    background-color: rgba(32, 33, 36, 0.8);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensure header appears above other content */
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #202124;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+  .genesis-section-content {
+    width: 90%; /* Make the div wider */
+    margin: 0 auto; /* Center the div horizontally */
+    text-align: left;
+    padding-top: 150px; /* Increase padding */
+    padding-bottom: 220px; /* Increase padding */
+    padding-left: 67px;
+    padding-right: 67px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+.genesis-section-content h2{
+    font-size: 100px;
+    color: #ff0000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.genesis-section-content p {
+    font-size: 50px;
+    color: #333;/* Change text color to white */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto; /* Center horizontally */
+  }
+  .image-container{
+    padding: 50px;
+  }
+.aboutus{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 30px;
+} 
+
+.aboutus h2{
+    color: #2066ff;
+}
+
+#services h3{
+    font-size: 2rem;
+    color: #2066ff;
+
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .text-container h2 {
+    font-size: 24px;
+  }
+  
+  .text-container p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2066ff;
+  }
+  
+  .whatsapp{
+    color: #00ff22;
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
+    z-index: 999; /* Ensure it's above other content */
+    animation: bounce 2s infinite; /* Apply the bounce animation */
+  }
+  
+  .whatsapp {
+    width: 50px; /* Adjust the size of the icon */
+    height: auto;
+  }
+  
+
+  /*Responsive design*/
+
+  @media (max-width: 767px) {
+
+    header {
+        max-width: 99%;
+      padding: 10px;
+    }
+ 
+    nav ul li {
+        font-size: 12px;
+    }
+
+    .section {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .section-content {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .genesis-section-content h2{
+        font-size: 50px;
+        color: #ff0000;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .genesis-section-content p {
+        font-size: 25px;
+        color: #333;/* Change text color to white */
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .aboutus{
+        font-size: 1rem;
+        text-align: center;
+        padding-top: 20px;
+    } 
+    
+    #services h3{
+        font-size: 1rem;
+    }
+
+    .image-container{
+        padding: 25px;
+      }
+      .grid-container {
+        gap: 10px;
+      }
+
+      .text-container h2 {
+        font-size: 12px;
+      }
+      
+      .text-container p {
+        font-size: 10px;
+      }
+    
+    main {
+      padding: 10px;
+    }
+  
+    footer {
+      width: 130%;
+      padding: 10px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+
+
